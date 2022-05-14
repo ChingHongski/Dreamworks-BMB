@@ -1,0 +1,56 @@
+body{
+	background-image: url("https://64.media.tumblr.com/6bf1cfbc8fa0ff672b57c6ad6a28b61c/tumblr_oir8ulNoGm1qetpbso9_500.jpg");
+	background-size: cover;
+	text-align: center;
+	font-family: 'Merriweather', serif;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto Slab', serif;
+	font-family: 'Zen Antique Soft', serif;
+}
+
+.button{
+	background-color: #04AA6D;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	padding: 12px;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+#connect4{
+	display: inline-block;
+	background-color: gainsboro;
+}
+
+.col{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	background-color: slategrey;
+	border-radius: 50%;
+	margin: 5px;
+}
+
+.col.empty{
+	cursor: pointer;
+}
+
+.next-lilo{
+	background-color: orangered;
+}
+
+.next-stitch{
+	background-color: #61aeed;
+}
+
+.col.stitch{
+	background-color: #0080ff;
+}
+
+.col.lilo{
+	background-color: indianred;
+}
