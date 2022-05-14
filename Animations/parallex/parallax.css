@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.boxes{
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+	background-size: covor;
+	background-position: center;
+	display: table;
+}
+
+#Box1{
+	background-image: url("dinosaur.jpeg");
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#Box1::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(to top, #d66733, transparent);
+}
+
+h1{
+	font-family: montserrat;
+	font-size: 48px;
+	color: whitesmoke;
+	margin: 0px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#Box2{
+	position: relative;
+	padding: 20% 100px;
+	background-color: #d66733;
+}
+
+#Box2 > p {
+	color: black;
+	font-size: 150%;
+}
+
+#cloud1 {
+	margin-top: -1000px;
+	position: absolute;
+	transform: translateZ(-3);
+	//z-index: -3;
+	width: 800px;
+	opacity: 0.8;
+	animation: slideLeft 1s infinite;	
+	filter: drop-shadow(5px 5px 5px #222222);
+}
+
+#cloud2 {
+	margin-top: -1200px;
+	position: absolute;
+	right: 	10px;
+	transform: translateZ(-1);
+	//z-index: -1;
+	width: 500px;
+	opacity: 0.8;
+	animation: slideLeft 1s infinite;	
+	filter: drop-shadow(5px 5px 5px #222222);
+}
+
+
+@keyframes slideLeft {
+	0%{
+		transform: translateX(0%);
+	}
+	50%{
+		transform: translateX(-50%);
+	}
+	100%{
+		transform: translateX(0%);
+	}
+	
+}
+
+@keyframes slideRight {
+	0%{
+		transform: translateX(0%);
+	}
+	50%{
+		transform: translateX(50%);
+	}
+	100%{
+		transform: translateX(0%);
+	}
+	
+}
+
+#Box3{
+	background-image: url("https://wordofthenerdonlinedotcom.files.wordpress.com/2011/01/triceratops_wallpaper-29126.jpg");
+	object-fit: cover;
+}
+
+#Box3::before{
+	content: "test";
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(to bottom, #d66733, transparent);
